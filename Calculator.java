@@ -1,41 +1,15 @@
-import java.util.Scanner;
-
-public class Calculator {
+public class ArithmeticOperations {
     public static void main(String[] args) {
-        int a, b;
-        char operator;
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter first number: ");
-        a = sc.nextInt();
-
-        System.out.print("Enter operator (+, -, *, /): ");
-        operator = sc.next().charAt(0);
-
-        System.out.print("Enter second number: ");
-        b = sc.nextInt();
-
-        switch (operator) {
-            case '+':
-                System.out.println("Result: " + (a + b));
-                break;
-            case '-':
-                System.out.println("Result: " + (a - b));
-                break;
-            case '*':
-                System.out.println("Result: " + (a * b));
-                break;
-            case '/':
-                if (b != 0) {
-                    System.out.println("Result: " + (a / b));
-                } else {
-                    System.out.println("Error: Division by zero is not allowed.");
-                }
-                break;
-            default:
-                System.out.println("Invalid operator.");
-                break;
-        }15115
+        int num1 = 10;
+        int num2 = 2;
+        int sum = num1 + num2;
+        int difference = num1 - num2;
+        int product = num1 * num2;
+        double quotient = (double) num1 / num2;
+        System.out.println("Addition: " + sum);
+        System.out.println("Subtraction: " + difference);
+        System.out.println("Multiplication: " + product);
+        System.out.println("Division: " + quotient);
     }
 }
+
